@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Image Drag and Drop</title>
+    <title>Drag and Drop Image Uploader</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     
+    <div class="app">
+        <label for="input-image" id="dropzone">
+            <input type="file" accept="image/*" id="input-image" hidden>
+            <div id="image-view">
+                <img src="./cloud.png" alt="clout-image" id="upload-icon">
+                <p> <strong>Drag and Drop or Click Here <br>to upload image<strong></p>
+                <span><em> Upload any image from desktop</em></span>
+            </div>
+        </label>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
